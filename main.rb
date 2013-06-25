@@ -46,6 +46,22 @@ get '/calc/multiply/:first/:second' do
 end
 
 get '/oh_hai/:name' do
+  @answer_to_universe = 42
   @name = params[:name]
   erb :hai
+end
+
+# localhost:4567/calc/1/sum/3
+get '/calc/:first/:operation/:second' do
+  @first = params[:first].to_f
+  #Valid operations: sum, difference, product, quotient
+  @operation = params[:operation]
+  @second = params[:second].to_f
+  @result = case @operation
+    when "sum" then @first + @second
+    when "difference" then @first - @second
+    when "product" then @first * @second
+    when "quotient" then @first / @second
+  end
+  erb :calc
 end

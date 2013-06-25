@@ -24,5 +24,15 @@ get '/names/:first/:last' do
   @first = params[:first]
   @last = params[:last]
   return "You can do multiple parameters,
-          #{@first.upcase}, #{@last}!"
+          #{@first.capitalize}, #{@last.capitalize}!"
+end
+
+# localhost:4567/calc/add/1/2
+get '/calc/add/:first/:second' do
+  #passes in params as strings. Must change to integer
+  @first = params[:first].to_i
+  @second = params[:second].to_i
+
+  #It wants a string to output it again
+  return (@first + @second).to_s
 end

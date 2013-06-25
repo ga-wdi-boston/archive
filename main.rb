@@ -65,3 +65,23 @@ get '/calc/:first/:operation/:second' do
   end
   erb :calc
 end
+
+# localhost:4567/calc_form
+get '/calc_form' do
+  @first = params[:first].to_f
+  #Valid operations: sum, difference, product, quotient
+  @operation = params[:operation]
+  @second = params[:second].to_f
+  @result = case @operation
+    when "sum" then @first + @second
+    when "difference" then @first - @second
+    when "product" then @first * @second
+    when "quotient" then @first / @second
+  end
+  erb :calc_form
+end
+
+get '/my_array' do
+  @my_array = ["Red", "Blue", "Green"]
+  erb :array
+end

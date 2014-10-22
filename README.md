@@ -1,7 +1,7 @@
 #WDI LA Lesson Resources
 ***
 #### Week 1
-<br>[Goals and Classroom Culture]
+[Goals and Classroom Culture]
 <br>[Command Line (UNIX) and Setting Up for Good FIle Structure]
 <br>[HTML Basics]
 <br>[How the Internet Works]
@@ -20,7 +20,7 @@
 <br>[JavaScript Scope (Variables)]
 
 #### Week 2
-<br>[More JavaScript Objects & Lab]
+[More JavaScript Objects & Lab]
 <br>[JavaScript Closures]
 <br>[Git/GitHub Review; Project 1 Intro (TTT); Classroom Culture Revisit]
 <br>[JavaScript Review Session]
@@ -35,7 +35,7 @@
 <br>[Build an Angular App from Scratch]
 
 #### Week 3
-<br>[HTTP Servers, Ports, Codes, Headers. Demo each with telnet, finish with curl.]
+[HTTP Servers, Ports, Codes, Headers. Demo each with telnet, finish with curl.]
 <br>[HTTP Methods, AJAX, JSON, APIs, demo with api.github.com]
 <br>[Intro to Firebase & AngularFire]()
 <br>[Firebase Deployment]
@@ -43,8 +43,18 @@
 <br>[Game Logic (winning, resetting, etc.)]
 <br>[Intro to Testing and Angular Testing Part 1]
 <br>[Angular Testing Part 2]
-<br>[]
 #### Week 4
+[Intro to Project 2 and the Rubric]
+<br>[Advanced Command Line]
+<br>[Ruby Basics (arrays, hashes, symbols, classes)]
+<br>[Object-Oriented Ruby]
+<br>[Intro to Ruby RSpec]
+<br>[Smoothies Lab (or subsitute)]
+<br>[Rental Property Exercise (or subsitute)]
+<br>[MongoDB and Mongoid]
+<br>[Mongoid Nested Documents]
+<br>[Your First Rails App: 3 Part Lesson]
+<br>[Routes]
 #### Week 5
 #### Week 6
 #### Week 7

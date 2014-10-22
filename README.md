@@ -2,22 +2,22 @@
 ***
 #### Week 1
 [Goals and Classroom Culture](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/classroom_culture/goals_and_classroom_culture)
-<br>[Command Line (UNIX) and Setting Up for Good FIle Structure]
-<br>[HTML Basics]
-<br>[How the Internet Works]
-<br>[Git Basics]
-<br>[Agile Development/Pivotal Tracker/Project Management]
-<br>[CSS Selectors and Basic Styling]
-<br>[CSS Specificity, Normalize, Boilerplate]
-<br>[Wireframing]
-<br>[CSS Positioning (floats, clears, etc.)]
-<br>[HTML/CSS Lab 1]
-<br>[HTML/CSS Lab 2]
-<br>[Introduce JavaScript (onclicks, selectors)]
-<br>[JavaScript and the DOM, and Objects]
-<br>[JavaScript Events]
-<br>[JavaScript Arrays, Loops, Iterating]
-<br>[JavaScript Scope (Variables)]
+<br>[Command Line Basics (UNIX) and Setting Up File Structure](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/bash/command_line_basics)
+<br>[HTML Basics](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/html/html_basics)
+<br>[How the Internet Works](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/cs/how_the_internet_works)
+<br>[Git Basics](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/project_management/git_basics)
+<br>[Agile Development/Pivotal Tracker/Project Management](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/project_management/agile_development_pivotaltracker)
+<br>[CSS Selectors and Basic Styling](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/css/css_selectors_and_basic_styling)
+<br>[CSS Specificity, Normalize, Boilerplate](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/css/css_specificity_normalize_boilerplate)
+<br>[Wireframing](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/ux/wireframing)
+<br>[CSS Positioning (floats, clears, etc.)](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/css/css_positioning)
+<br>[HTML/CSS Lab 1: Blog](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/html_css/html_css_blog_lab)
+<br>[HTML/CSS Lab 2: Busyhands](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/html_css/html_css_busyhands_lab)
+<br>[Introduce JavaScript (onclicks, selectors)](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/javascript/introduce_javascript)
+<br>[JavaScript and the DOM, and Objects](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/javascript/js_and_the_dom_and_objects)
+<br>[JavaScript Events](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/javascript/js_events)
+<br>[JavaScript Arrays, Loops, Iterating](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/javascript/js_arrays_loops_iterating)
+<br>[JavaScript Scope (Variables)](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/javascript/js_scope)
 
 #### Week 2
 [More JavaScript Objects & Lab]

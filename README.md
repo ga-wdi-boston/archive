@@ -1,7 +1,7 @@
 #WDI LA Lesson Resources
 ***
 #### Week 1
-[Goals and Classroom Culture]
+[Goals and Classroom Culture](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/Lessons/classroom_culture/goals_and_classroom_culture)
 <br>[Command Line (UNIX) and Setting Up for Good FIle Structure]
 <br>[HTML Basics]
 <br>[How the Internet Works]

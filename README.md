@@ -1,6 +1,6 @@
 #WDI LA Lesson Resources
 
-#This repository is currently unser construction! Please do not add or remove anything from it
+
 
 
 ***

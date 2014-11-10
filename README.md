@@ -3,7 +3,6 @@
 
 
 
-***
 
 
 ######Hello and welcome WDI LA Instructors! This repo is our go to spot for finding and adding materials and resources for our lessons.

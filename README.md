@@ -24,8 +24,7 @@ To add a lesson to this repo follow these steps:
 
 <br>
 ##Lessons Broken Down By ***Topic***
-[]()
-<br>[AngularJS](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/angularjs)
+[AngularJS](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/angularjs)
 <br>[AngularJS & Firebase](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/angularjs_firebase)
 <br>[AngularJS Testing](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/angularjs_testing)
 <br>[APIs](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/apis)

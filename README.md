@@ -12,7 +12,7 @@
 You have two options when it comes to finding lesson materials in this repo:
 
 1. Browse through each week of WDI and take a look at the lessons based on their titles.
-2. Open up the ```lesson_topics``` folder and browse through each lesson by their topic.
+2. Scroll down below and browse through each lesson by their topic.
 
 ##How to ***add*** lessons
 To add a lesson to this repo follow these steps:
@@ -21,6 +21,50 @@ To add a lesson to this repo follow these steps:
 2. Once you're in the appropriate topic folder, navigate to the folder with your lesson's title. If there isn't a folder within your lesson's title, please create one.
 3. Once inside of the correct lesson folder, please create a new directory, title it with your name, and then place all of that lessons material inside of your named folder.
 4. That's it!
+
+<br>
+##Lessons Broken Down By ***Topic***
+[]()
+<br>[AngularJS](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/angularjs)
+<br>[AngularJS & Firebase](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/angularjs_firebase)
+<br>[AngularJS Testing](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/angularjs_testing)
+<br>[APIs](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/apis)
+<br>[AWS](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/aws)
+<br>[Bash](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/bash)
+<br>[BDD](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/bdd)
+<br>[Classroom Culture](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/classroom_culture)
+<br>[CoffeeScript](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/coffeescript)
+<br>[Computer Science](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/cs)
+<br>[CSS](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/css)
+<br>[D3](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/d3)
+<br>[Deployment](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/deployment)
+<br>[Firebase](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/firebase)
+<br>[Git](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/git)
+<br>[HTML](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/html)
+<br>[HTML & CSS](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/html_css)
+<br>[HTTP](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/http)
+<br>[JavaScript](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/javascript)
+<br>[jQuery](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/jquery)
+<br>[Mobile](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/mobile)
+<br>[MongoDB](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/mongodb)
+<br>[Object-oriented Programming](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/oop)
+<br>[Paperclip](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/paperclip)
+<br>[Project Management](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/project_management)
+<br>[Pseudocode](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/pseudocode)
+<br>[Rails](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/rails)
+<br>[Rails & AngularJS](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/rails_and_angular)
+<br>[Rails Testing](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/rails_testing)
+<br>[Ruby](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/ruby)
+<br>[Ruby Testing](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/ruby_testing)
+<br>[Sinatra](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/sinatra)
+<br>[User Acceptance Testing](https://github.com/ga-students/WDI_LA_Lesson_Resources/tree/master/lesson_topics/user_acceptance_testing)
+<br>[UX]()
+
+
+
+<br><br>
+
+
 
 ##Lessons Broken Down By ***Week***
 #### Week 1 Lessons
@@ -88,4 +132,3 @@ To add a lesson to this repo follow these steps:
 #### Week 12 Lessons
 
 <br><br>
-##Lessons Broken Down By ***Topic***

@@ -1,0 +1,17 @@
+#INSTRUCTOR READ ME !
+2014-11-12 rgrossman: created
+<BR>
+<BR>
+
+## DO NOT COPY THESE FILES TO THE STUDENT REPO 
+<BR> 
+<BR>
+  <BR>
+
+  
+## THESE ARE INSTRUCTOR PLANS AND MATERIALS ONLY  
+
+<br>
+<br>
+
+-end-  

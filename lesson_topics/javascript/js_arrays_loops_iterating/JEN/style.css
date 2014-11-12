@@ -1,0 +1,15 @@
+
+body {
+	background-color: grey;
+	font-family: cursive;
+	font-size: 50px;
+	color: white;
+}
+
+button {
+	background-color:pink; 
+	width:250px; 
+	height:150px; 
+	position: middle;
+	font-size:30px;
+}

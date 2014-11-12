@@ -1,0 +1,174 @@
+// Step 1 - Let's Talk About JS Arrays
+// As Lorin says, "Everybody likes arrays!"
+
+
+// Step 2 - Create some arrays
+
+	// There are 3 ways to create arrays:
+
+		// Regular
+			var people=new Array(); 
+			people[0]="Jess";       
+			people[1]="Lorin";
+			people[2]="Marc";
+
+		// Condensed
+		 	var people=new Array("Jess","Lorin","Marc");
+
+		// Literal
+			var people=["Jess","Lorin","Marc"];
+
+
+// Step 3 - Access some arrays
+		// How do we access items in an array?
+			people[0];
+
+		// How could I modify one value in and array?
+			people[0]="Samson";
+
+		// How do I edit/use methods on arrays?
+			var cities = ["Paris", "London", "Tokyo", "Berlin"];
+				
+				cities.pop(); //TAKE OFF END
+
+				cities.push("New York"); //PUSH ON END
+
+				cities.length;
+
+				cities.reverse();
+
+		// There are many many more, play around during your lab!
+
+
+--------------------------------------------------
+
+
+// STEP 4 - Let's Talk About JS Loops!
+
+ // 	** for, while and the if NEVER have semi colons at the end, but they can use curlies.
+	// ** for, while and if ALWAYS use parens on their condition.
+
+// Let's whiteboard some For Loop syntax:
+
+
+	for(assignment; end condition; incremet/decrement){
+		LOOP ACTION HERE
+	}
+
+
+
+	// So, if I were to have an array and a for loop like this, how is it broken down and defined?*   *Look below for a broken down walkthrough
+
+	var people=["Jess", "Lorin", "Marc", "Jen", "Hannah", "Francke", "Meredith"];
+
+		console.log("This is a For Loop!:");
+
+		for(var i = 0; i < people.length; i++) {
+		console.log(" The element at index " + i + " is: " + people[i]);
+		}
+		// ** THE ASSIGNMENT sets a variable before the loop begins
+		// ** THE END CONDITION defines the condition for the loop to run
+		// ** INCEREMENT/DECREMENTS does just that each time it's run
+
+
+
+	// THIS is a DECREMENTING For Loop example!
+
+		var mixed = [1, "two", "three", true];
+
+		console.log("For Loop:"); // Common mistake: commas instead of "semicolons" inside for loop.
+
+		for(var i = mixed.length -1 ; i >= 0 ; i--) {
+  			console.log("The element at index " + i + " is: " + mixed[i]);
+		}
+
+
+// STEP 6 - While Loop
+
+	// They loop as long as spcified condition is true -->
+	// Similar to For Loop, but with ASSIGNMENT & END CONDITION left out
+
+	
+// Let's whiteboard some While Loop syntax:
+
+		while (condition){
+  			WHILE LOOP CODE TO BE EXECUTED
+  			}
+
+// Now, let's create a veggies themed While Loop:
+
+var veggies=["Kale","Lettuce","Broccoli","Peas"];
+var i=0;
+while (veggies[i])
+{
+document.write(veggies[i] + "<br>");
+i++;
+}
+
+
+
+// This is the For Loop version of the While Loop above:
+var veggies=["Kale","Lettuce","Broccoli","Peas"];
+
+for (var i=0;veggies[i];i++)
+{
+document.write(veggies[i] + "<br>");
+}
+
+
+
+// Here's another While Loop which example, we've made into a counter:
+
+var count = 0;
+console.log("While Loop START!");
+while (count < 10){
+  console.log(count);
+  count++;
+}
+console.log("While Loop STOP!");
+
+
+
+
+
+
+<!-- The do...while loop is similar to the while loop except that the condition check happens at the end of the loop. This means that the loop will always be executed at least once, even if the condition is false. -->
+
+
+var count = 0;
+console.log("Do...While Loop START!");
+do{
+  console.log(count);
+  count++;
+}while (count < 10);
+console.log("Do...While Loop STOP!");
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- OTHER GA EXAMPLE -->
+var a = [1,2,3,4];
+var b = [1,2,3,4];
+
+console.log("While Loop:")
+
+var i = 0;
+while(i < a.length){
+  console.log("The element at index " + i + " is: " + a[i]);
+  i++;
+}
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+USER CENTERED DESIGN
+
+Kitchen example
+1
+One change to kitchen you would make for yourself
+3 Shares
+
+2
+One change to kitchen that would make the kitchen more popular
+3 Shares
+
+3
+One change to kitchen for the person who maintains the kitchen
+3 Shares
+
+Intro to topic
+Objective
+Connection from models and use cases to test cases & test-driven development
+
+Different types of people use sites
+
+Don't need to argue on behalf of one user type
+
+Explain: Create persona's
+
+Explain:  Generate Use cases from the personas
+
+Lab
+Students create personas and use cases for their project 3
+At least 3 personas
+At least 2 use cases per person
+
+Teach: 
+
+how and where this connects and works in the development process
+How it connects to testing in TDD
+
+Richard 08/21/2014
+

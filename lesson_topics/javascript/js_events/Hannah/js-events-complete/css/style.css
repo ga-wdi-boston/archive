@@ -1,0 +1,15 @@
+#megaman {
+  background-image: url("../images/megaman.jpg");
+  background-size: 640px 377px;
+  height: 187px;
+  width: 160px;
+  position: relative;
+  background-position: -1px -1px;
+  top: 0px;
+  left: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}

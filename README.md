@@ -1,4 +1,6 @@
+![GA_Logo](https://raw.github.com/generalassembly/ga-ruby-on-rails-for-devs/master/images/ga.png)
 #WDI LA Lesson Resources
+
 
 
 
@@ -16,9 +18,9 @@ You have two options when it comes to finding lesson materials in this repo:
 ##How to ***add*** lessons
 To add a lesson to this repo follow these steps:
 
-1. Navigate to your lesson's topic folder, if it exists. If there is no appropriate topic folder for your lesson, please create a directory for it under the ```lesson_topics``` folder.
-2. Once you're in the appropriate topic folder, navigate to the folder with your lesson's title. If there isn't a folder within your lesson's title, please create one.
-3. Once inside of the correct lesson folder, please create a new directory, title it with your name, and then place all of that lessons material inside of your named folder.
+1. Navigate to your lesson's topic folder, if it exists. If there is no appropriate topic folder for your lesson, please create a directory for it under the ```lesson_topics``` folder. ***The lesson topic should match the topic from the Dibs sheet!***
+2. Once you're in the appropriate topic folder, navigate to the folder with your lesson's title. If there isn't a folder within your lesson's title, please create one. 
+3. Once inside of the correct lesson folder, please create a new directory, title it with your name, and then place all of your lessons materials inside of your named folder.
 4. That's it!
 
 <br>

@@ -1,0 +1,55 @@
+/**
+ * Copyright (c) 2012 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+body, section, ul {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  background: white;
+}
+
+
+/* Color List */
+
+#color-list li:first-child {
+  margin-top: 0px;
+}
+
+#color-list li {
+  list-style-type: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 1px 3px;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  width: 100px;
+  margin-top: 1px;
+  background: #cccccc;
+}
+
+#color-list li:hover {
+  background: #aaaaaa;
+}
+
+#color-list li[data-color="red"] {
+  border: 1px solid red;
+  color: red;
+}
+
+#color-list li[data-color="blue"] {
+  border: 1px solid blue;
+  color: blue;
+}
+
+#color-list li[data-color="green"] {
+  border: 1px solid green;
+  color: green;
+}
+
+#color-list li[data-color="yellow"] {
+  border: 1px solid yellow;
+  color: yellow;
+}

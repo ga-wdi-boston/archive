@@ -6,3 +6,4 @@ gem 'rails-api'
 gem 'spring', group: :development
 gem 'pg'
 gem 'rails_12factor', group: :production
+gem 'puma'

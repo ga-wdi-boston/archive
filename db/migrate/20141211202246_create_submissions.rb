@@ -6,7 +6,6 @@ class CreateSubmissions < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_foreign_key :submissions, :answers
-    add_foreign_key :submissions, :users
+
   end
 end

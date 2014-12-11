@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users, except: [:new, :edit]
   resources :submissions, except: [:new, :edit]
   resources :answers, except: [:new, :edit]
   resources :materials, except: [:new, :edit]

@@ -9,8 +9,5 @@ class CreateQuestions < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_foreign_key :questions, :correct_answers
-    add_foreign_key :questions, :objectives
-    add_foreign_key :questions, :assessments
   end
 end

@@ -8,7 +8,5 @@ class CreateAssessments < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_foreign_key :assessments, :users
-    add_foreign_key :assessments, :topics
   end
 end

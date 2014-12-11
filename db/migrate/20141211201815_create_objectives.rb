@@ -8,7 +8,5 @@ class CreateObjectives < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_foreign_key :objectives, :topics
-    add_foreign_key :objectives, :assessments
   end
 end

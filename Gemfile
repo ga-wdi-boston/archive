@@ -7,3 +7,7 @@ gem 'spring', group: :development
 gem 'pg'
 gem 'rails_12factor', group: :production
 gem 'puma'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end

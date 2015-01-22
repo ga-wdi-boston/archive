@@ -63,8 +63,8 @@ inside 'app' do
 end
 
 after_bundle do
-  run "rake db:create"
-  run "rake db:migrate"
+  run 'rake db:create'
+  run 'rake db:migrate'
   run 'guard init rails'
   git :init
   git add: '.'

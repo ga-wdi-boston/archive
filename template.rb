@@ -50,6 +50,8 @@ in_root do
   template 'README.md'
   template 'Procfile'
   remove_file 'README.rdoc'
+  remove_file '.gitignore'
+  template '.gitignore'
 end
 
 inside 'config' do

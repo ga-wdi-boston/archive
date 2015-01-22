@@ -3,8 +3,7 @@
 # rails-api new <app_name> --database=postgresql -T -m path/to/this/file/template.rb
 
 def source_paths
-  Array(super) +
-    [File.join(File.expand_path(File.dirname(__FILE__)),'files')]
+  [File.join(File.expand_path(File.dirname(__FILE__)),'files')] + Array(super)
 end
 
 insert_into_file 'Gemfile', "\nruby '2.2.0'", after: "source 'https://rubygems.org'\n"
@@ -55,6 +54,12 @@ end
 
 inside 'config' do
   template 'unicorn.rb'
+  template 'database.yml.travis'
+  template 'env.yml.template'
+
+  inside 'initializers' do
+    template 'environment_variables.rb'
+  end
 end
 
 inside 'app' do
@@ -69,6 +74,7 @@ after_bundle do
   git :init
   git add: '.'
   git commit: %Q{ -m 'Initial commit' }
+  run 'rails s'
 end
 
 # you may need to make more specific changes to files that

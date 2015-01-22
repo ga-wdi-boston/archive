@@ -15,6 +15,7 @@ gem 'nokogiri'
 
 # add gems for dev & test env
 gem_group :development, :test do
+  gem 'dotenv-rails'
   gem "rspec-rails", "~> 3.1.0"
   gem "pry-byebug"
   gem "pry-rails"

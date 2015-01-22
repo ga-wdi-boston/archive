@@ -46,7 +46,12 @@ in_root do
   template '.ruby-version'
   template 'LICENSE'
   template 'README.md'
+  template 'Procfile'
   remove_file 'README.rdoc'
+end
+
+inside 'config' do
+  template 'unicorn.rb'
 end
 
 inside 'app' do

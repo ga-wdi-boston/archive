@@ -43,7 +43,7 @@ gsub_file 'Gemfile', /[#].*/,''
 gsub_file 'Gemfile', /[\n]+/,"\n"
 
 in_root do
-  run 'rspec --init'
+  run 'rails generate rspec:install'
   template '.travis.yml'
   template '.ruby-version'
   template 'LICENSE'

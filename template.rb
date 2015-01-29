@@ -14,6 +14,7 @@ gem 'nokogiri'
 
 # add gems for dev & test env
 gem_group :development, :test do
+  gem 'capybara'
   gem 'rubocop'
   gem 'bullet'
   gem 'lol_dba'
@@ -43,7 +44,6 @@ gsub_file 'Gemfile', /[#].*/,''
 gsub_file 'Gemfile', /[\n]+/,"\n"
 
 in_root do
-  run 'rails generate rspec:install'
   template '.travis.yml'
   template '.ruby-version'
   template 'LICENSE'
@@ -69,7 +69,14 @@ inside 'app' do
   end
 end
 
+
 after_bundle do
+  run 'spring stop'
+  run 'rails generate rspec:install'
+  inside 'spec' do
+    insert_into_file 'rails_helper.rb',"require 'capybara/rspec'\nrequire 'capybara/rails'\n", after: "require 'rspec/rails'\n"
+  end
+  insert_into_file '.rspec', '--format documentation', after: "--require spec_helper\n"
   run 'rake db:create'
   run 'rake db:migrate'
   run 'guard init rails'

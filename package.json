@@ -1,0 +1,25 @@
+{
+  "name": "wdi_8_node_async",
+  "version": "1.0.0",
+  "description": "![General Assembly Logo](http://i.imgur.com/ke8USTq.png)",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.7.17"
+  },
+  "devDependencies": {
+    "json-server": "^0.7.17"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ga-wdi-boston/wdi_8_node_async.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ga-wdi-boston/wdi_8_node_async/issues"
+  },
+  "homepage": "https://github.com/ga-wdi-boston/wdi_8_node_async#readme"
+}

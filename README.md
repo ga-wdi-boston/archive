@@ -40,7 +40,7 @@ One common function in JavaScript that behaves asynchronously is `setTimeout`; w
 
 ```javascript
 var funcA = function() {
-  setTimeout(1000, function(){console.log("Timer is done.");});
+  setTimeout(function(){console.log("Timer is done.");}, 1000);
 }
 ```
 
@@ -48,7 +48,7 @@ If we were to write another line of code after `setTimeOut`, it's possible that 
 ```javascript
 var funcA = function() {
   console.log("funcA begins");
-  setTimeout(1000, function(){ console.log("Timer is done."); })
+  setTimeout(function(){ console.log("Timer is done."); }, 1000)
   console.log("Launched just after timeout is set.")
 }
 ```
@@ -64,7 +64,7 @@ One way to do this might be to actually call each stage of the process *from wit
 ```javascript
 var funcA = function() {
   console.log("Called funcA");
-  setTimeout(1000, funcB);
+  setTimeout(funcB, 1000);
   console.log("Not waiting!")
 }
 
@@ -82,7 +82,7 @@ If we'd wanted, we could have written this with callbacks as well, like so:
 ```javascript
 var funcA = function(){
   console.log("Called funcA");
-  setTimeout(1000, function() {console.log("Called first anonymous callback")});
+  setTimeout(function() {console.log("Called first anonymous callback")}, 1000);
   console.log("Not waiting!")
 }
 ```
@@ -91,12 +91,12 @@ We could also have made it a three-stage process by adding another timeout to ou
 ```javascript
 var funcA = function() {
   console.log("Called original function");
-  setTimeout(1000, function() {
+  setTimeout(function() {
     console.log("Called first callback");
-    setTimeOut(1000, function() {
+    setTimeout(function() {
       console.log("Called second callback");
-    });
-  });
+    }, 1000);
+  }, 1000);
 }
 
 ```

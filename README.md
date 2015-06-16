@@ -106,9 +106,13 @@ var funcA = function() {
 In pairs, use `setTimeout` to set up a five-stage serial (one after the other) asynchronous process using callbacks. Each of these functions must print out one of the following lines before calling the next callback:
 
 "There once was a man from Nantucket"
+
 "Who kept all his cash in a bucket."
+
 "But his daughter, named Nan,"
+
 "Ran away with a man,"
+
 "And as for the bucket, Nantucket (Nan took it)."
 
 Then, individually, see if you can set up a three-stage serial process as follows, using setTimeout.

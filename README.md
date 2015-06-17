@@ -207,7 +207,7 @@ In teams of three, write an asynchronous process using `async.waterfall` that
 
 ## `async.parallel`
 
-Unlike `series` and `watefall`, `async.parallel` is used not to order a set of callbacks, but (as the name implies) to run a set of callbacks in parallel. In practical terms, this just means that all callbacks will get called at once, and that the final callback will only trigger once all parallel 'tasks' are complete (or if an error is hit).
+Unlike `series` and `waterfall`, `async.parallel` is used not to order a set of callbacks, but (as the name implies) to run a set of callbacks in parallel. In practical terms, this just means that all callbacks will get called at once, and that the final callback will only trigger once all parallel 'tasks' are complete (or if an error is hit).
 
 ```javascript
 async.parallel([

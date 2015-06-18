@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-function applyRoutes(passport) {
+function applyRoutes(passport, mongoose) {
 	/* GET home page. */
 	router.get('/', function(req, res, next) {
 		var name = req.user ? req.user.firstName + ' ' + req.user.lastName : 'nobody';
@@ -16,7 +16,7 @@ function applyRoutes(passport) {
 	router.get('/login/callback', passport.authenticate('github', {
 		successRedirect : '/',
 		failureRedirect : '/login'
-	});
+	}));
 
 	return router;
 }

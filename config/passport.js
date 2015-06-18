@@ -4,24 +4,35 @@ var passport = require('passport'),
 var githubClientID,
 	githubClientSecret;
 
-passport.use(new GithubStrategy({
-		clientID : githubClientID || '', // get these from Github
-		clientSecret : githubClientSecret || '', // get these from Github
-		callbackURL : "http://localhost:3000/login/callback"
-	}, function(accessToken, refreshToken, profile, done) {
-		// find user from or add user to DB here, then pass it to `done` as the second argument
-		// see https://github.com/jaredhanson/passport-github
-	}));
+function configurePassport(mongoose) {
+	var User = mongoose.model('User');
 
-// straight out of the docs
-passport.serializeUser(function(user, done) {
-	done(null, user.id); // set to whichever attribute is the primary key or unique index in your user schema
-	// perhaps the attribute storing their github id
-});
+	passport.use(new GithubStrategy({
+			clientID : githubClientID || '', // get these from Github
+			clientSecret : githubClientSecret || '', // get these from Github
+			callbackURL : "http://localhost:3000/login/callback"
+		}, function(accessToken, refreshToken, profile, done) {
+			// see https://github.com/jaredhanson/passport-github
+			User.findOrCreate({
+				githubId : profile.id
+			}, function(err, user) {
+				return done(err, user);
+			});
+		}));
 
-passport.deserializeUser(function(id, done) {
-	// database code here for retrieving user record by the serialized value (e.g., by github id)
-	// then pass it to `done` as the second arg, or pass an error to `done` as the first arg
-});
+	passport.serializeUser(function(user, done) {
+		done(null, user.githubId);
+	});
 
-module.exports = passport;
+	passport.deserializeUser(function(id, done) {
+		User.findOne({
+			githubId : id
+		}, function(err, user) {
+			done(err, user);
+		});
+	});
+
+	return passport;
+}
+
+module.exports = configurePassport;

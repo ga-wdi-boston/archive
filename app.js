@@ -5,12 +5,16 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-//var MongoStore = require('connect-mongo')(session); // uncomment for mongo session storage
-
+var MongoStore = require('connect-mongo')(session);
+var mongoose = require('./models');
 var routes = require('./routes/index');
-var passport = require('./config/passport');
-//var mongoStoreConfig = require('./config/mongostore'); // uncomment for mongo session storage
+var passportGen = require('./config/passport'); // a function that takes mongoose and returns passport
+var mongooseConfig = require('./config/mongoose');
 //var users = require('./routes/users');
+
+mongoose.connect(mongooseConfig.url);
+
+var passport = passportGen(mongoose);
 
 var app = express();
 
@@ -28,10 +32,9 @@ app.use(cookieParser());
 // auth middleware
 app.use(session({
 	secret : "such secret, much whisper",
-/*	store : new MongoStore({
- *		mongooseConnection : mongoose.connection
- *	} || mongoStoreConfig) // uncomment for mongo session storage
- */
+	store : new MongoStore({
+		mongooseConnection : mongoose.connection
+	})
 }));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -39,7 +42,7 @@ app.use(passport.session());
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes(passport));
+app.use('/', routes(passport, mongoose));
 //app.use('/users', users);
 
 // catch 404 and forward to error handler

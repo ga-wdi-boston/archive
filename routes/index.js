@@ -1,0 +1,24 @@
+var express = require('express');
+var router = express.Router();
+
+function applyRoutes(passport) {
+	/* GET home page. */
+	router.get('/', function(req, res, next) {
+		var name = req.user ? req.user.firstName + ' ' + req.user.lastName : 'nobody';
+
+		res.render('index', {
+			title: 'Express',
+			userName : name
+		});
+	});
+
+	router.get('/login', passport.authenticate('github'));
+	router.get('/login/callback', passport.authenticate('github', {
+		successRedirect : '/',
+		failureRedirect : '/login'
+	});
+
+	return router;
+}
+
+module.exports = applyRoutes;

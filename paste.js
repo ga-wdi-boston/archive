@@ -25,7 +25,7 @@ function paste(message) {
 		return;
 	});
 
-	req.write(postData).end();
+	postReq.write(postData).end();
 }
 
 module.exports = paste;

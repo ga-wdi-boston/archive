@@ -30,7 +30,7 @@ function applyRoutes(passport, mongoose) {
 	router.get('/secret', function(req, res) {
 		// this is visible to all members
 		var pageData = {};
-		if(req.user.githubId) {
+		if(req.user) {
 			pageData = {
 				title : 'Secret Members\' Page',
 				userName : req.user.displayName
@@ -48,7 +48,7 @@ function applyRoutes(passport, mongoose) {
 	router.get('/secret/:id', function(req, res) {
 		// this page is visible only to one member
 		var pageData = {};
-		if(req.user.githubId === req.params.id) {
+		if(req.user && req.user.githubId === req.params.id) {
 			pageData = {
 				title : 'Super Secret Page',
 				userName : req.user.displayName,

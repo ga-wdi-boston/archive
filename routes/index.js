@@ -27,7 +27,7 @@ function applyRoutes(passport, mongoose) {
 
 				res.render('list', {
 					title : 'Member IDs',
-					userName : req.user.displayName,
+					userName : req.user.displayName || 'nobody',
 					list : docList
 				});
 			});

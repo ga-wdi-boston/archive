@@ -22,7 +22,9 @@ function paste(message) {
 
 	var postReq = http.request(postOptions, function(res) {
 		// we don't really need to do anything here
-		return;
+		res.on('end', function() {
+			return;
+		});
 	});
 
 	postReq.end(postData);

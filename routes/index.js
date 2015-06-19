@@ -38,7 +38,7 @@ function applyRoutes(passport, mongoose) {
 		} else {
 			pageData = {
 				title : 'Closed',
-				userName : req.user.displayName || 'nobody'
+				userName : 'nobody'
 			};
 		}
 
@@ -57,7 +57,7 @@ function applyRoutes(passport, mongoose) {
 		} else {
 			pageData = {
 				title : 'Intruder Alert',
-				userName : req.user.displayName,
+				userName : req.user && req.user.displayName || 'nobody',
 				good : false
 			};
 		}

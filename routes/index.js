@@ -14,7 +14,7 @@ function applyRoutes(passport, mongoose) {
 		});
 	});
 
-	router.get('/public', function(req, res) {
+	router.get('/open', function(req, res) {
 		// this is visible to everyone
 		User.find().
 			select('githubId').

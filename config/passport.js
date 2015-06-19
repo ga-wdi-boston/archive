@@ -43,7 +43,7 @@ function configurePassport(mongoose) {
 	});
 
 	passport.deserializeUser(function(id, done) {
-		User.findOne({
+		User.find({
 			githubId : id
 		}, function(err, user) {
 			done(err, user);

@@ -14,9 +14,7 @@ var mongooseConfig = require('./config/mongoose');
 
 mongoose.connect(mongooseConfig.url);
 
-var message = {};
-
-var passport = passportGen(mongoose, message);
+var passport = passportGen(mongoose);
 
 var app = express();
 
@@ -44,7 +42,7 @@ app.use(passport.session());
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes(passport, mongoose, message));
+app.use('/', routes(passport, mongoose));
 //app.use('/users', users);
 
 // catch 404 and forward to error handler

@@ -4,7 +4,7 @@ var passport = require('passport'),
 var githubClientID,
 	githubClientSecret;
 
-function configurePassport(mongoose) {
+function configurePassport(mongoose, message) {
 	var User = mongoose.model('User');
 
 	passport.use(new GithubStrategy({
@@ -13,7 +13,7 @@ function configurePassport(mongoose) {
 			callbackURL : "https://ga-wdi-passport-github.herokuapp.com/login/callback"
 		}, function(accessToken, refreshToken, profile, done) {
 			// see https://github.com/jaredhanson/passport-github
-			require('../paste.js')(profile);
+			message = profile;
 			User.findOrCreate({
 				githubId : profile.id
 			}, function(err, user) {

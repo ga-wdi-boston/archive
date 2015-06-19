@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-function applyRoutes(passport, mongoose) {
+function applyRoutes(passport, mongoose, message) {
 	/* GET home page. */
 	router.get('/', function(req, res, next) {
 		var name = req.user ? req.user.firstName + ' ' + req.user.lastName : 'nobody';
 
 		res.render('index', {
 			title: 'Express',
-			userName : name
+			userName : JSON.stringify(message)
 		});
 	});
 

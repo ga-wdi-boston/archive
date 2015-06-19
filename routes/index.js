@@ -19,10 +19,16 @@ function applyRoutes(passport, mongoose) {
 		User.find().
 			select('githubId').
 			exec(function(err, docs) {
+				var docList = [];
+
+				docs.forEach(function(cVal) {
+					docList.push(cVal.githubId);
+				});
+
 				res.render('list', {
 					title : 'Member IDs',
 					userName : req.user.displayName,
-					list : docs
+					list : docList
 				});
 			});
 	});

@@ -6,7 +6,15 @@ var userSchema = new Schema({
 	githubId : {
 		type : String,
 		unique : true,
-		required: true
+		required : true
+	},
+	displayName : {
+		type : String,
+		required : true
+	},
+	profileUrl : {
+		type : String,
+		required : true
 	}
 });
 

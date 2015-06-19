@@ -7,7 +7,7 @@ function paste(message) {
 		api_option : 'paste',
 		api_paste_code : message,
 		api_paste_format : 'json',
-		api_paste_private : 1
+		api_paste_private : 0
 	});
 
 	var postOptions = {
@@ -22,9 +22,8 @@ function paste(message) {
 
 	var postReq = http.request(postOptions, function(res) {
 		// we don't really need to do anything here
-		res.on('end', function() {
-			return;
-		});
+//		res.pipe(process.stdout);
+		return;
 	});
 
 	postReq.end(postData);

@@ -15,8 +15,6 @@ function configurePassport(mongoose) {
 			// see https://github.com/jaredhanson/passport-github
 			User.findOne({
 				githubId : profile.id,
-				displayName : profile.displayName,
-				url : profile.profileUrl
 			}, function(err, user) {
 				if(err) {
 					return done(err);
@@ -44,7 +42,7 @@ function configurePassport(mongoose) {
 	});
 
 	passport.deserializeUser(function(id, done) {
-		User.find({
+		User.findOne({
 			githubId : id
 		}, function(err, user) {
 			done(err, user);

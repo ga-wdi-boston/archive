@@ -39,7 +39,7 @@ function configurePassport(mongoose) {
 		}));
 
 	passport.serializeUser(function(user, done) {
-		done(null, user.githubId);
+		done(null, user.id || user.githubId);
 	});
 
 	passport.deserializeUser(function(id, done) {

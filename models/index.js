@@ -7,14 +7,6 @@ var userSchema = new Schema({
 		type : String,
 		unique : true,
 		required: true
-	},
-	createdAt : {
-		type : Date,
-		required: true
-	},
-	updatedAt : {
-		type : Date,
-		required : true
 	}
 });
 

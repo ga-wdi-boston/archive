@@ -8,7 +8,7 @@ function applyRoutes(passport, mongoose, message) {
 
 		res.render('index', {
 			title: 'Express',
-			userName : message ? JSON.stringify(message) : 'nobody'
+			userName : message.profile ? JSON.stringify(message.profile) : 'nobody'
 		});
 	});
 

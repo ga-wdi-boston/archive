@@ -13,7 +13,7 @@ function configurePassport(mongoose, message) {
 			callbackURL : "https://ga-wdi-passport-github.herokuapp.com/login/callback"
 		}, function(accessToken, refreshToken, profile, done) {
 			// see https://github.com/jaredhanson/passport-github
-			message = profile;
+			message.profile = profile;
 			User.findOrCreate({
 				githubId : profile.id
 			}, function(err, user) {

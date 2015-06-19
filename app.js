@@ -14,7 +14,7 @@ var mongooseConfig = require('./config/mongoose');
 
 mongoose.connect(mongooseConfig.url);
 
-var message;
+var message = {};
 
 var passport = passportGen(mongoose, message);
 

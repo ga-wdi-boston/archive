@@ -13,28 +13,12 @@ function configurePassport(mongoose) {
 			callbackURL : "https://ga-wdi-passport-github.herokuapp.com/login/callback"
 		}, function(accessToken, refreshToken, profile, done) {
 			// see https://github.com/jaredhanson/passport-github
-			User.find({
-				githubId : profile.id
+			User.findOrCreate({
+				githubId : profile.id,
+				displayName : profile.displayName,
+				url : profile.profileUrl
 			}, function(err, user) {
-				if(err) {
-					return done(err);
-				}
-				if(user) {
-					return done(null, user);
-				}
-				if(!user) {
-					User.create({
-						githubId : profile.id,
-						name : profile.displayName,
-						url : profile.profileUrl
-					}, function(err, user) {
-						if(err) {
-							return done(err);
-						}
-
-						done(null, user);
-					});
-				}
+				done(err, user);
 			});
 		}));
 

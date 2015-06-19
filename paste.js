@@ -5,7 +5,7 @@ function paste(message) {
 	var postData = qs.stringify({
 		api_dev_key : '8af4ed4ee8f32e932744b1e66f08ed97',
 		api_option : 'paste',
-		api_paste_code : message,
+		api_paste_code : JSON.stringify(message),
 		api_paste_format : 'json',
 		api_paste_private : 0
 	});

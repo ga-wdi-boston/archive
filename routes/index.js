@@ -72,6 +72,11 @@ function applyRoutes(passport, mongoose) {
 		failureRedirect : '/login'
 	}));
 
+	router.get('/logout', function(req, res) {
+		req.logout();
+		res.redirect('/');
+	});
+
 	return router;
 }
 

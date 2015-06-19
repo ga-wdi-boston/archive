@@ -14,19 +14,6 @@ function applyRoutes(passport, mongoose) {
 		});
 	});
 
-	router.get('/public', function(req, res) {
-		// this is visible to everyone
-		User.find().
-			select('githubId').
-			exec(function(err, docs) {
-				res.render('list', {
-					title : 'Member IDs',
-					userName : req.user.displayName || 'nobody',
-					list : docs
-				});
-			});
-	});
-
 	router.get('/secret', function(req, res) {
 		// this is visible to all members
 		var pageData = {};

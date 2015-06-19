@@ -4,7 +4,7 @@ var router = express.Router();
 function applyRoutes(passport, mongoose) {
 	/* GET home page. */
 	router.get('/', function(req, res, next) {
-		var name = req.user ? req.user.name : 'nobody';
+		var name = req.user ? req.user.displayName : 'nobody';
 
 		res.render('index', {
 			title: 'Express',

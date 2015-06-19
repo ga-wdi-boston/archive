@@ -9,12 +9,10 @@ var userSchema = new Schema({
 		required : true
 	},
 	displayName : {
-		type : String,
-		required : true
+		type : String
 	},
 	profileUrl : {
-		type : String,
-		required : true
+		type : String
 	}
 });
 
